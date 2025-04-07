@@ -31,7 +31,7 @@ const asinfo = [
     innerText: "-> MB Extension",
   },
   {
-    href: "https://github.com/mbot613/mb-smarter",
+    href: "https://github.com/gitmorgen/mb-smarter",
     innerText: "-> MBS Extension",
   },
 ];
