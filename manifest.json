@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "MB Smarter - Super Admin",
+  "version": "0.0.1",
+  "description": "Extended functionality of the MB Smart admin portal, found at https://portal.mbsmartservices.net/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://portal.mbsmartservices.net/*"],
+      "js": ["content.js"],
+      "css": ["css/styles.css"],
+      "run_at": "document_idle",
+      "type": "module"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["js/*", "icons/*", "images/*", "manifest.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
